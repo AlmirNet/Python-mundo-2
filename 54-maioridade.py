@@ -1,15 +1,14 @@
-import datetime
-contador = 0
-atual = datetime.datetime.today().year
-maior = 0
-menor = 0
+from datetime import date
+atual = date.today().year
+totmaior = 0
+totmenor = 0
+for pess in range(1, 8):
+    nasc = int(input(f'Em que ano a {pess}° pessoa nasceu? '))
+    idade = atual - nasc
+    if idade >= 21:
+        totmaior += 1
+    else:
+        totmenor += 1
+print(f'Ao todo tivemos {totmaior} pessoas maiores de idade.')
+print(f'E também tivemos {totmenor} pessoas menores de idade.')
 
-for c in range(1, 8):
-    anos = int(input(f'Idade da {c}° pessoas: '))
-    idade = atual - anos
-    if idade >= 18:
-        maior = maior + 1
-    elif 18 > idade >= 0:
-        menor = menor + 1
-        
-print(f'Quantidade de pessoas maiores de idade: {maior} \nQuantidade de pessoas menores de idade: {menor}')
