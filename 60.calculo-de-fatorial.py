@@ -1,9 +1,10 @@
-number = int(input('Digite o número: '))
-numero = number
-antecessor = numero - 1
-
-while antecessor != 1:
-    numero = numero * antecessor
-    antecessor = antecessor - 1
-
-print(f'O fatorial de {number} é {numero}')
+n = int(input('Digite um número para calcular seu Fatorial: '))
+c = n
+f = 1
+print(f'Calculando {n}!')
+while c > 0:
+    print(f'{c}', end='')
+    print(' x ' if c > 1 else ' = ', end='')
+    f *= c
+    c -= 1
+print(f'{f}')
