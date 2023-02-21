@@ -1,0 +1,6 @@
+cbf = ('Palmeiras', 'Flamengo', 'Internacional', 'Grêmio', 'São Paulo','Atletico Mineiro', 'Atlético-PR', 'Cruzeiro', 'Botafogo', 'Santos', 'Bahia', 'Corinthias', 'Fluminense', 'Ceará', 'Vasco da Gama', 'Sport Recife', 'América-MG', 'Chapecoense', 'Vitória', 'Paraná')
+print('=!' * 30)
+print(f'Lista de times do Brasileirão: {cbf}')
+print('=!' * 30)
+print(f'Os 5 primeiros colocados: {cbf[:5]}')
+print('!=' * 30)
