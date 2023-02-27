@@ -1,4 +1,4 @@
-palavras = ('aprenda', 'programar', 'linguaguem', 'python', 'curso', 'gratis')
+palavras = ('almir', 'stefhany', 'aprenda', 'programar', 'linguaguem', 'python', 'curso', 'gratis')
 vogais =('a', 'e', 'i', 'o', 'u')
 
 for palavra in palavras:
